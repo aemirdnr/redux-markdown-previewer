@@ -14,6 +14,7 @@ function Input() {
         className={Styles.markdown_input}
         value={!isOpen ? textInput : textHelp}
         onChange={(e) => dispatch(inputUpdate(e.target.value))}
+        readOnly={isOpen}
       ></textarea>
     </div>
   );
